@@ -1,0 +1,167 @@
+[gd_scene load_steps=17 format=3 uid="uid://cjjocoq6dwbp1"]
+
+[ext_resource type="Script" uid="uid://fkum0am7lby2" path="res://Menu/menu.gd" id="1_eafcm"]
+[ext_resource type="Texture2D" uid="uid://noxvimlfvhgk" path="res://img/menu.png" id="1_rwxi6"]
+[ext_resource type="Texture2D" uid="uid://cq8vfqnaup025" path="res://img/logo.png" id="2_ihied"]
+[ext_resource type="Texture2D" uid="uid://dkpqswws6l450" path="res://img/engranaje1.png" id="3_ofseh"]
+[ext_resource type="Texture2D" uid="uid://px646hv3s26c" path="res://img/play.png" id="3_raj00"]
+[ext_resource type="Texture2D" uid="uid://v1qotcnbpylb" path="res://img/empleado.png" id="4_w6voe"]
+[ext_resource type="Texture2D" uid="uid://c504fcmc3khlp" path="res://img/salir.png" id="5_w6voe"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cotva"]
+bg_color = Color(0.392157, 0.376471, 0.376471, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ofseh"]
+bg_color = Color(0.462745, 0.462745, 0.462745, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="Theme" id="Theme_ihied"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xuj3a"]
+bg_color = Color(0.847059, 0.72549, 0.290196, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tf6kh"]
+bg_color = Color(0.956863, 0.827451, 0.368627, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mf1wf"]
+bg_color = Color(0.290196, 0.6, 0.145098, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_w6voe"]
+bg_color = Color(0.356863, 0.694118, 0.2, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0k1h5"]
+bg_color = Color(0.894118, 0.317647, 0.160784, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_eafcm"]
+bg_color = Color(1, 0.392157, 0.227451, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_eafcm")
+
+[node name="Fondo" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -28.0
+offset_bottom = 92.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_rwxi6")
+
+[node name="Logo" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.276042
+anchor_top = 0.186728
+anchor_right = 0.703125
+anchor_bottom = 0.608025
+offset_left = 12.0
+offset_top = -43.0
+offset_right = 12.0
+offset_bottom = -43.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_ihied")
+expand_mode = 1
+
+[node name="Opciones" type="Button" parent="."]
+layout_mode = 2
+offset_left = 1004.0
+offset_top = 45.0
+offset_right = 1094.0
+offset_bottom = 132.0
+theme_override_colors/font_hover_color = Color(0, 0.603922, 0.0588235, 1)
+theme_override_font_sizes/font_size = 50
+theme_override_styles/hover = SubResource("StyleBoxFlat_cotva")
+theme_override_styles/normal = SubResource("StyleBoxFlat_ofseh")
+icon = ExtResource("3_ofseh")
+icon_alignment = 1
+
+[node name="ContenedorBotones" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -305.0
+offset_top = -276.0
+offset_right = 307.0
+offset_bottom = -110.0
+grow_horizontal = 2
+grow_vertical = 0
+localize_numeral_system = false
+theme = SubResource("Theme_ihied")
+theme_override_constants/separation = 31
+alignment = 1
+
+[node name="Personaje" type="Button" parent="ContenedorBotones"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+tooltip_text = "Personaje"
+theme_override_styles/hover = SubResource("StyleBoxFlat_xuj3a")
+theme_override_styles/normal = SubResource("StyleBoxFlat_tf6kh")
+icon = ExtResource("4_w6voe")
+icon_alignment = 1
+
+[node name="Jugar" type="Button" parent="ContenedorBotones"]
+texture_filter = 6
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+tooltip_text = "Jugar"
+theme_override_colors/font_hover_color = Color(0, 0.603922, 0.0588235, 1)
+theme_override_font_sizes/font_size = 50
+theme_override_styles/hover = SubResource("StyleBoxFlat_mf1wf")
+theme_override_styles/normal = SubResource("StyleBoxFlat_w6voe")
+icon = ExtResource("3_raj00")
+icon_alignment = 1
+
+[node name="Salir" type="Button" parent="ContenedorBotones"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+tooltip_text = "Salir"
+theme_override_font_sizes/font_size = 50
+theme_override_styles/hover = SubResource("StyleBoxFlat_0k1h5")
+theme_override_styles/normal = SubResource("StyleBoxFlat_eafcm")
+icon = ExtResource("5_w6voe")
+icon_alignment = 1
+
+[connection signal="pressed" from="ContenedorBotones/Jugar" to="." method="_on_jugar_pressed"]
