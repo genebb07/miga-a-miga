@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://b81y1j1in11oi"]
+
+[ext_resource type="Texture2D" uid="uid://bai0rv43mw6tg" path="res://img/cebolla.png" id="1_63kfy"]
+
+[node name="cebolla" type="StaticBody2D"]
+
+[node name="Cebolla" type="Sprite2D" parent="."]
+texture = ExtResource("1_63kfy")

@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://dxajct4u14i0h"]
+
+[ext_resource type="Texture2D" uid="uid://hqhg1qfkg024" path="res://img/bandeja de ingredientes.png" id="1_k68p0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_k68p0"]
+size = Vector2(668, 423)
+
+[node name="bandejaIngred" type="StaticBody2D"]
+
+[node name="BandejaDeIngredientes" type="Sprite2D" parent="."]
+texture = ExtResource("1_k68p0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-533, -2109.5)
+shape = SubResource("RectangleShape2D_k68p0")

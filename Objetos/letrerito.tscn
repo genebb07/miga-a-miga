@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://2ci8swi7s47u"]
+
+[ext_resource type="Texture2D" uid="uid://cdt2vjx6jdeyf" path="res://img/letrero.png" id="1_2kxpv"]
+
+[node name="Letrerito" type="StaticBody2D"]
+
+[node name="Letrero" type="Sprite2D" parent="."]
+texture = ExtResource("1_2kxpv")

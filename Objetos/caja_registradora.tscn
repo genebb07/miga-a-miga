@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://n2vncvsvlgku"]
+
+[ext_resource type="Texture2D" uid="uid://r3uemlnb45gf" path="res://img/caja.png" id="1_mukgr"]
+
+[node name="CajaRegistradora" type="StaticBody2D"]
+
+[node name="Caja" type="Sprite2D" parent="."]
+texture = ExtResource("1_mukgr")

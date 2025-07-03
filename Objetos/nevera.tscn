@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://bhxtoho20fgrj"]
+
+[ext_resource type="Texture2D" uid="uid://cc08qh8ynbxrq" path="res://img/nevera.png" id="1_utrjq"]
+
+[node name="nevera" type="StaticBody2D"]
+
+[node name="Nevera" type="Sprite2D" parent="."]
+texture = ExtResource("1_utrjq")

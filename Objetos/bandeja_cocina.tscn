@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://b1riotw70efe1"]
+
+[ext_resource type="Texture2D" uid="uid://cb2fwe4njt8bl" path="res://img/bandeja de cocina.png" id="1_8jjfv"]
+
+[node name="bandejaCocina" type="StaticBody2D"]
+
+[node name="BandejaDeCocina" type="Sprite2D" parent="."]
+texture = ExtResource("1_8jjfv")

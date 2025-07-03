@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://ckd0wke5vwvb5"]
+
+[ext_resource type="Texture2D" uid="uid://ltcl8g65d2gd" path="res://img/pared der.png" id="1_7a837"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7a837"]
+size = Vector2(301, 6917)
+
+[node name="ParedL" type="StaticBody2D"]
+
+[node name="ParedDer" type="Sprite2D" parent="."]
+texture = ExtResource("1_7a837")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1743.5, -817.5)
+shape = SubResource("RectangleShape2D_7a837")

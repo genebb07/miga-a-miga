@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://ovlnn8hgv6c0"]
+
+[ext_resource type="Texture2D" uid="uid://k4fk4ol1l28m" path="res://img/tabla de preparaciones.png" id="1_sebtk"]
+
+[node name="tablaPreparaciones" type="StaticBody2D"]
+
+[node name="TablaDePreparaciones" type="Sprite2D" parent="."]
+texture = ExtResource("1_sebtk")

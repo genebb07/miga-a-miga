@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://yqyemlnm85xx"]
+
+[ext_resource type="PackedScene" uid="uid://wobd2kmidh8e" path="res://Objetos/piso.tscn" id="1_4nsbr"]
+[ext_resource type="PackedScene" uid="uid://blr6mydvb41qb" path="res://Objetos/suelo.tscn" id="2_2icj5"]
+[ext_resource type="PackedScene" uid="uid://dhi08ph1g45kv" path="res://Objetos/calle_fondo.tscn" id="3_aoop2"]
+
+[node name="Pisos" type="StaticBody2D"]
+
+[node name="suelo_coci2" parent="." instance=ExtResource("1_4nsbr")]
+position = Vector2(0, 2384)
+
+[node name="suelo_coci" parent="." instance=ExtResource("1_4nsbr")]
+
+[node name="SueloRecep" parent="." instance=ExtResource("2_2icj5")]
+position = Vector2(-23, 1739)
+
+[node name="CalleFondo" parent="." instance=ExtResource("3_aoop2")]
+position = Vector2(0, 11)

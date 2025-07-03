@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://blr6mydvb41qb"]
+
+[ext_resource type="Texture2D" uid="uid://chspbw246acsy" path="res://img/suelo.png" id="1_bpwl5"]
+
+[node name="SueloRecep" type="StaticBody2D"]
+
+[node name="Suelo" type="Sprite2D" parent="."]
+texture = ExtResource("1_bpwl5")

@@ -1,0 +1,42 @@
+[gd_scene load_steps=6 format=3 uid="uid://dioc2rxoag0it"]
+
+[ext_resource type="Texture2D" uid="uid://of35w7cehepx" path="res://img/meson.png" id="1_i53y6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_i53y6"]
+size = Vector2(505, 347.75)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jmjvx"]
+size = Vector2(1161.5, 297)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q4dwu"]
+size = Vector2(721.05, 161.684)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uwgfn"]
+size = Vector2(895.75, 349.5)
+
+[node name="Meson" type="StaticBody2D"]
+
+[node name="Meson" type="Sprite2D" parent="."]
+texture = ExtResource("1_i53y6")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(-1456.5, -620.125)
+shape = SubResource("RectangleShape2D_i53y6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-204.75, -236.5)
+shape = SubResource("RectangleShape2D_jmjvx")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="."]
+position = Vector2(587.72, -395.059)
+rotation = -0.715585
+shape = SubResource("RectangleShape2D_q4dwu")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="."]
+position = Vector2(-957.404, -361.829)
+rotation = -2.42601
+shape = SubResource("RectangleShape2D_q4dwu")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="."]
+position = Vector2(1260.88, -624.25)
+shape = SubResource("RectangleShape2D_uwgfn")

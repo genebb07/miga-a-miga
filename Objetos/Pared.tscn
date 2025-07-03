@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://77tgvujc2660"]
+
+[ext_resource type="Texture2D" uid="uid://gi4hh5m6s34" path="res://img/paredes inferior.png" id="1_2kj2g"]
+
+[node name="Pared" type="StaticBody2D"]
+
+[node name="ParedesInferior" type="Sprite2D" parent="."]
+position = Vector2(227, -3211)
+texture = ExtResource("1_2kj2g")

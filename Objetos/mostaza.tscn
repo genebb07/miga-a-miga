@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://cg6n1twfj11kq"]
+
+[ext_resource type="Texture2D" uid="uid://gua1dddh1cio" path="res://img/mostaza.png" id="1_5o5qw"]
+
+[node name="mostaza" type="StaticBody2D"]
+
+[node name="Mostaza" type="Sprite2D" parent="."]
+texture = ExtResource("1_5o5qw")

@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://bexmunudmv7vj"]
+
+[ext_resource type="Texture2D" uid="uid://wl4huckbq7jm" path="res://img/plato.png" id="1_xaftf"]
+
+[node name="Plato" type="StaticBody2D"]
+
+[node name="Plato" type="Sprite2D" parent="."]
+texture = ExtResource("1_xaftf")

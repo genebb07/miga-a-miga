@@ -1,0 +1,54 @@
+[gd_scene load_steps=9 format=3 uid="uid://bgnktdus3fkp8"]
+
+[ext_resource type="PackedScene" uid="uid://dioc2rxoag0it" path="res://Objetos/Meson.tscn" id="1_e510g"]
+[ext_resource type="PackedScene" uid="uid://n2vncvsvlgku" path="res://Objetos/caja_registradora.tscn" id="2_t06nc"]
+[ext_resource type="PackedScene" uid="uid://e5q4ge68o8ag" path="res://Objetos/telita.tscn" id="3_ymx74"]
+[ext_resource type="PackedScene" uid="uid://bexmunudmv7vj" path="res://Objetos/plato.tscn" id="4_grkrk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e510g"]
+size = Vector2(505, 347.75)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t06nc"]
+size = Vector2(1161.5, 364.75)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ymx74"]
+size = Vector2(721.05, 235.106)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_grkrk"]
+size = Vector2(895.75, 349.5)
+
+[node name="at_cliente" type="StaticBody2D"]
+
+[node name="Meson" parent="." instance=ExtResource("1_e510g")]
+position = Vector2(-1073, 1561)
+
+[node name="CajaRegistradora" parent="." instance=ExtResource("2_t06nc")]
+position = Vector2(-740, -15)
+
+[node name="Telita" parent="." instance=ExtResource("3_ymx74")]
+position = Vector2(163, -427)
+
+[node name="Plato" parent="." instance=ExtResource("4_grkrk")]
+position = Vector2(170, -408)
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(-2531, 949.125)
+shape = SubResource("RectangleShape2D_e510g")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1279.25, 1366.63)
+shape = SubResource("RectangleShape2D_t06nc")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="."]
+position = Vector2(-492.461, 1167.66)
+rotation = -0.715585
+shape = SubResource("RectangleShape2D_ymx74")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="."]
+position = Vector2(-2004.11, 1154.09)
+rotation = -2.42601
+shape = SubResource("RectangleShape2D_ymx74")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="."]
+position = Vector2(186.375, 945)
+shape = SubResource("RectangleShape2D_grkrk")

@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://de7fmx21si3ja"]
+
+[ext_resource type="Texture2D" uid="uid://3wslqpnjgha0" path="res://img/planti.png" id="1_ombbm"]
+
+[node name="planta" type="StaticBody2D"]
+
+[node name="Planti" type="Sprite2D" parent="."]
+texture = ExtResource("1_ombbm")

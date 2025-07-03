@@ -1,0 +1,42 @@
+[gd_scene load_steps=10 format=3 uid="uid://cmwavskbqa5h5"]
+
+[ext_resource type="PackedScene" uid="uid://yqyemlnm85xx" path="res://Escenas/pisos.tscn" id="1_ric2q"]
+[ext_resource type="PackedScene" uid="uid://bq3atlkf6f5h3" path="res://Objetos/meson_cliente.tscn" id="2_7ugqe"]
+[ext_resource type="PackedScene" uid="uid://de7fmx21si3ja" path="res://Objetos/planta.tscn" id="3_6fwj0"]
+[ext_resource type="PackedScene" uid="uid://rq1na0j1pq5l" path="res://Personaje/personaje.tscn" id="4_qusxs"]
+[ext_resource type="PackedScene" uid="uid://vh7g7q720rag" path="res://Escenas/IslaCocina.tscn" id="5_1vww1"]
+[ext_resource type="PackedScene" uid="uid://dstgdc6ifvwa3" path="res://Objetos/pared_otra.tscn" id="6_7ugqe"]
+[ext_resource type="PackedScene" uid="uid://ge7mmplrahbb" path="res://Escenas/paredes.tscn" id="6_hejrj"]
+[ext_resource type="PackedScene" uid="uid://bgnktdus3fkp8" path="res://Escenas/at_cliente.tscn" id="7_vr4xn"]
+[ext_resource type="PackedScene" uid="uid://03kajwqtdtss" path="res://Escenas/fondo_cocina.tscn" id="8_3u38g"]
+
+[node name="mundito" type="StaticBody2D"]
+scale = Vector2(0.3, 0.3)
+
+[node name="Pisos" parent="." instance=ExtResource("1_ric2q")]
+
+[node name="mesonCliente" parent="." instance=ExtResource("2_7ugqe")]
+
+[node name="Node2D" type="Node2D" parent="."]
+y_sort_enabled = true
+
+[node name="Personaje" parent="Node2D" instance=ExtResource("4_qusxs")]
+position = Vector2(1030, -400)
+speed = 300
+
+[node name="IslaCocina" parent="Node2D" instance=ExtResource("5_1vww1")]
+position = Vector2(-230, -1596.67)
+
+[node name="Paredes" parent="Node2D" instance=ExtResource("6_hejrj")]
+
+[node name="ParedOtra2" parent="Node2D" instance=ExtResource("6_7ugqe")]
+position = Vector2(-93.3334, -3703.33)
+
+[node name="fondoCocina" parent="Node2D" instance=ExtResource("8_3u38g")]
+position = Vector2(-26.6667, -3206.67)
+
+[node name="At_Cliente" parent="." instance=ExtResource("7_vr4xn")]
+position = Vector2(1056, 114)
+
+[node name="planta" parent="." instance=ExtResource("3_6fwj0")]
+position = Vector2(22, 124)

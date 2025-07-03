@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://cbjd68erlxmml"]
+
+[ext_resource type="Texture2D" uid="uid://bi5cx0rkwibbv" path="res://img/ketchup.png" id="1_sffdg"]
+
+[node name="ketchup" type="StaticBody2D"]
+
+[node name="Ketchup" type="Sprite2D" parent="."]
+texture = ExtResource("1_sffdg")

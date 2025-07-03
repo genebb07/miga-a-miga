@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://bivy0uuyeeeyr"]
+
+[ext_resource type="Texture2D" uid="uid://drl4rimlxtqbg" path="res://img/tomate.png" id="1_2nfph"]
+
+[node name="tomate" type="StaticBody2D"]
+
+[node name="Tomate" type="Sprite2D" parent="."]
+texture = ExtResource("1_2nfph")

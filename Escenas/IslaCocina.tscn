@@ -1,0 +1,40 @@
+[gd_scene load_steps=10 format=3 uid="uid://vh7g7q720rag"]
+
+[ext_resource type="PackedScene" uid="uid://csol3xij80iyq" path="res://Objetos/isla.tscn" id="1_lku1c"]
+[ext_resource type="PackedScene" uid="uid://dxajct4u14i0h" path="res://Objetos/bandeja_ingred.tscn" id="2_kqfgp"]
+[ext_resource type="PackedScene" uid="uid://cbjd68erlxmml" path="res://Objetos/ketchup.tscn" id="3_at7e1"]
+[ext_resource type="PackedScene" uid="uid://cem1rmal1mynv" path="res://Objetos/mayonesa.tscn" id="4_qe26g"]
+[ext_resource type="PackedScene" uid="uid://cg6n1twfj11kq" path="res://Objetos/mostaza.tscn" id="5_0uwdh"]
+[ext_resource type="PackedScene" uid="uid://ovlnn8hgv6c0" path="res://Objetos/tabla_preparaciones.tscn" id="6_iol74"]
+[ext_resource type="PackedScene" uid="uid://bivy0uuyeeeyr" path="res://Objetos/tomate.tscn" id="7_soe2w"]
+[ext_resource type="PackedScene" uid="uid://b81y1j1in11oi" path="res://Objetos/cebolla.tscn" id="8_ghwba"]
+[ext_resource type="PackedScene" uid="uid://crjlfk6rb7wbx" path="res://Objetos/queso.tscn" id="9_2pptr"]
+
+[node name="IslaCocina" type="StaticBody2D"]
+
+[node name="isla" parent="." instance=ExtResource("1_lku1c")]
+position = Vector2(-81, 2095)
+
+[node name="mostaza" parent="." instance=ExtResource("5_0uwdh")]
+position = Vector2(-97, 2095)
+
+[node name="mayonesa" parent="." instance=ExtResource("4_qe26g")]
+position = Vector2(-97, 2095)
+
+[node name="ketchup" parent="." instance=ExtResource("3_at7e1")]
+position = Vector2(-97, 2095)
+
+[node name="tablaPreparaciones" parent="." instance=ExtResource("6_iol74")]
+position = Vector2(-125, 2095)
+
+[node name="bandejaIngred" parent="." instance=ExtResource("2_kqfgp")]
+position = Vector2(-81, 2095)
+
+[node name="cebolla" parent="." instance=ExtResource("8_ghwba")]
+position = Vector2(-81, 2095)
+
+[node name="queso" parent="." instance=ExtResource("9_2pptr")]
+position = Vector2(-81, 2095)
+
+[node name="tomate" parent="." instance=ExtResource("7_soe2w")]
+position = Vector2(-81, 2095)

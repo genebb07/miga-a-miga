@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://wobd2kmidh8e"]
+
+[ext_resource type="Texture2D" uid="uid://bb4jo5cdjmxmp" path="res://img/piso cocina.png" id="1_7he4r"]
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="PisoCocina" type="Sprite2D" parent="."]
+texture = ExtResource("1_7he4r")

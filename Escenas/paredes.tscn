@@ -1,0 +1,20 @@
+[gd_scene load_steps=6 format=3 uid="uid://ge7mmplrahbb"]
+
+[ext_resource type="PackedScene" uid="uid://bcduhyxc02xyc" path="res://Objetos/OtraPared.tscn" id="1_52u0s"]
+[ext_resource type="PackedScene" uid="uid://77tgvujc2660" path="res://Objetos/Pared.tscn" id="2_or60y"]
+[ext_resource type="PackedScene" uid="uid://ckd0wke5vwvb5" path="res://Objetos/ParedLateral2.tscn" id="3_l7gup"]
+[ext_resource type="PackedScene" uid="uid://8mflb3njsflu" path="res://Objetos/ParedLateral.tscn" id="4_igphs"]
+[ext_resource type="PackedScene" uid="uid://2ci8swi7s47u" path="res://Objetos/letrerito.tscn" id="6_523sq"]
+
+[node name="Paredes" type="StaticBody2D"]
+
+[node name="Pared" parent="." instance=ExtResource("1_52u0s")]
+
+[node name="Pared2" parent="." instance=ExtResource("2_or60y")]
+position = Vector2(-231, 3211)
+
+[node name="ParedL" parent="." instance=ExtResource("3_l7gup")]
+
+[node name="ParedL2" parent="." instance=ExtResource("4_igphs")]
+
+[node name="Letrerito" parent="." instance=ExtResource("6_523sq")]

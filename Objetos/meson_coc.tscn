@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://drf6slt82qsiq"]
+
+[ext_resource type="Texture2D" uid="uid://ip8uivn14jn5" path="res://img/meson coc.png" id="1_deblv"]
+
+[node name="mesonCoc" type="StaticBody2D"]
+
+[node name="MesonCoc" type="Sprite2D" parent="."]
+texture = ExtResource("1_deblv")

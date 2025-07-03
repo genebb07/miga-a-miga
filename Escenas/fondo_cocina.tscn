@@ -1,0 +1,36 @@
+[gd_scene load_steps=8 format=3 uid="uid://03kajwqtdtss"]
+
+[ext_resource type="PackedScene" uid="uid://b1riotw70efe1" path="res://Objetos/bandeja_cocina.tscn" id="2_bltgn"]
+[ext_resource type="PackedScene" uid="uid://bhxtoho20fgrj" path="res://Objetos/nevera.tscn" id="3_7hwle"]
+[ext_resource type="PackedScene" uid="uid://bxnle2vhj2j3y" path="res://Objetos/plancha.tscn" id="4_vfqjm"]
+[ext_resource type="PackedScene" uid="uid://drf6slt82qsiq" path="res://Objetos/meson_coc.tscn" id="5_6rk7y"]
+[ext_resource type="PackedScene" uid="uid://crjlfk6rb7wbx" path="res://Objetos/queso.tscn" id="6_kg6v1"]
+[ext_resource type="PackedScene" uid="uid://bivy0uuyeeeyr" path="res://Objetos/tomate.tscn" id="7_36ned"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yrafr"]
+size = Vector2(3388, 502)
+
+[node name="fondoCocina" type="StaticBody2D"]
+
+[node name="bandejaCocina" parent="." instance=ExtResource("2_bltgn")]
+position = Vector2(23, 3206)
+
+[node name="nevera" parent="." instance=ExtResource("3_7hwle")]
+position = Vector2(6, 3206)
+
+[node name="plancha" parent="." instance=ExtResource("4_vfqjm")]
+position = Vector2(23, 3206)
+
+[node name="mesonCoc" parent="." instance=ExtResource("5_6rk7y")]
+position = Vector2(23, 3206)
+
+[node name="queso" parent="." instance=ExtResource("6_kg6v1")]
+position = Vector2(-47, 2031)
+
+[node name="tomate" parent="." instance=ExtResource("7_36ned")]
+position = Vector2(357, 2175)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+z_index = 1
+position = Vector2(72, 46)
+shape = SubResource("RectangleShape2D_yrafr")

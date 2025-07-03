@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://dstgdc6ifvwa3"]
+
+[ext_resource type="Texture2D" uid="uid://cfe5o8utrukaw" path="res://img/pared coci.png" id="1_0hygg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0hygg"]
+size = Vector2(3368, 717)
+
+[node name="ParedOtra" type="StaticBody2D"]
+
+[node name="ParedCoci" type="Sprite2D" parent="."]
+position = Vector2(88, 3704)
+texture = ExtResource("1_0hygg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(68, 104.5)
+shape = SubResource("RectangleShape2D_0hygg")

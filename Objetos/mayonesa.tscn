@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://cem1rmal1mynv"]
+
+[ext_resource type="Texture2D" uid="uid://ic8q53v0k8ty" path="res://img/mayonesa.png" id="1_gmjwd"]
+
+[node name="mayonesa" type="StaticBody2D"]
+
+[node name="Mayonesa" type="Sprite2D" parent="."]
+texture = ExtResource("1_gmjwd")
